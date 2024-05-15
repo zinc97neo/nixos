@@ -11,6 +11,7 @@
       url = "github:ryantm/agenix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    home-manager.url = "github:nix-community/home-manager";
   };
   outputs = inputs @ { self, nixpkgs, ... }: {
     nixosConfigurations = {
@@ -21,6 +22,19 @@
           inputs.nixos-wsl.nixosModules.wsl
           inputs.agenix.nixosModules.default
           ./system/wsl.nix
+          inputs.home-manager.nixosModules.home-manager
+            ({ config, ... }: {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                extraSpecialArgs = { inherit inputs; };
+                users.zinc = {
+                  imports = [
+                    ./home/wsl.nix
+                  ] ++ [];         
+                };
+              };
+            })
         ];
       };
     };
