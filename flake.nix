@@ -1,23 +1,26 @@
 {
   description = "Zinc's NixOS Configuration";
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixos-wsl = {
-      url = "github:nix-community/NixOS-WSL";
-      inputs.nixpkgs.follows = "nixpkgs";
+  inputs =
+    {
+      nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+      nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+      nixos-wsl = {
+        url = "github:nix-community/NixOS-WSL";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+      agenix = {
+        url = "github:ryantm/agenix";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+      home-manager.url = "github:nix-community/home-manager";
+      helix.url = "github:helix-editor/helix/master";
     };
-    agenix = {
-      url = "github:ryantm/agenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    home-manager.url = "github:nix-community/home-manager";
-  };
   outputs = inputs @ { self, nixpkgs, ... }: {
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
     nixosConfigurations = {
       wsl = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
         modules = [
           # include NixOS-WSL modules
           inputs.nixos-wsl.nixosModules.wsl

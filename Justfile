@@ -7,12 +7,12 @@
 ############################################################################
 fmt:
     # format the nix files in this repo
-    nix fmt
+    sudo nix fmt
 
-wsl:
+wsl: fmt
   sudo nixos-rebuild switch --flake . #wsl --show-trace --verbose
 
-desktop:
+desktop: fmt
   sudo nixos-rebuild switch --flake . #desktop --show-trace --verbose
 
 up:

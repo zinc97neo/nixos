@@ -1,13 +1,16 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    helix # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    git
-    gnumake
-    wget
-    just # a command runner(replacement of gnumake in some cases)
-    curl
-  ];
+  environment = {
+    variables.EDITOR = "hx";
+    systemPackages = with pkgs; [
+      inputs.helix.packages."${pkgs.system}".helix # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+      git
+      gnumake
+      wget
+      just # a command runner(replacement of gnumake in some cases)
+      curl
+    ];
+  };
   nix = {
     settings.experimental-features = [ "nix-command" "flakes" ];
     gc = {

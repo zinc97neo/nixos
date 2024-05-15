@@ -5,6 +5,7 @@ in
 {
   imports = [
     ./core
+    ./editor/helix
   ];
   home = {
     username = "${user}";
