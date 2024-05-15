@@ -7,6 +7,10 @@
       url = "github:nix-community/NixOS-WSL";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = inputs @ { self, nixpkgs, ... }: {
     nixosConfigurations = {
@@ -15,6 +19,7 @@
         modules = [
           # include NixOS-WSL modules
           inputs.nixos-wsl.nixosModules.wsl
+          inputs.agenix.nixosModules.default
           ./system/wsl.nix
         ];
       };
