@@ -5,6 +5,10 @@
 #  Nix commands related to the local machine
 #
 ############################################################################
+fmt:
+    # format the nix files in this repo
+    nix fmt
+
 wsl:
   sudo nixos-rebuild switch --flake . #wsl --show-trace --verbose
 

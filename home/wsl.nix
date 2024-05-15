@@ -3,6 +3,9 @@ let
   user = config.machine.userName;
 in
 {
+  imports = [
+    ./core
+  ];
   home = {
     username = "${user}";
     homeDirectory = "/home/${user}";

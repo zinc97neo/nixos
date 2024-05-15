@@ -14,6 +14,7 @@
     home-manager.url = "github:nix-community/home-manager";
   };
   outputs = inputs @ { self, nixpkgs, ... }: {
+    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
     nixosConfigurations = {
       wsl = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -24,21 +25,21 @@
           ./system/wsl.nix
           ./machines/windows-terminal
           inputs.home-manager.nixosModules.home-manager
-            ({ config, ... }: {
-              home-manager = {
-                useGlobalPkgs = true;
-                useUserPackages = true;
-                extraSpecialArgs = { inherit inputs; };
-                sharedModules = [
-                  (./. + "/machines/${config.machine.userName}.nix")
-                ];
-                users.${config.machine.userName} = {
-                  imports = [
-                    ./home/wsl.nix
-                  ] ++ [];   
-                };
+          ({ config, ... }: {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = { inherit inputs; };
+              sharedModules = [
+                (./. + "/machines/${config.machine.userName}.nix")
+              ];
+              users.${config.machine.userName} = {
+                imports = [
+                  ./home/wsl.nix
+                ] ++ [ ];
               };
-            })
+            };
+          })
         ];
       };
     };
