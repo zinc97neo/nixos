@@ -5,11 +5,11 @@
 #  Nix commands related to the local machine
 #
 ############################################################################
-deploy:
-  sudo nixos-rebuild switch --flake .
+wsl:
+  sudo nixos-rebuild switch --flake . #wsl --show-trace --verbose
 
-debug:
-  sudo nixos-rebuild switch --flake . --show-trace --verbose
+desktop:
+  sudo nixos-rebuild switch --flake . #desktop --show-trace --verbose
 
 up:
   sudo nix flake update
