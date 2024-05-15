@@ -2,6 +2,7 @@
 {
   imports = [
     ./base.nix
+    ./user.nix
   ];
   wsl = {
     enable = true;

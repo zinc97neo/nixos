@@ -22,16 +22,20 @@
           inputs.nixos-wsl.nixosModules.wsl
           inputs.agenix.nixosModules.default
           ./system/wsl.nix
+          ./machines/windows-terminal
           inputs.home-manager.nixosModules.home-manager
             ({ config, ... }: {
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 extraSpecialArgs = { inherit inputs; };
-                users.zinc = {
+                sharedModules = [
+                  (./. + "/machines/${config.machine.userName}.nix")
+                ];
+                users.${config.machine.userName} = {
                   imports = [
                     ./home/wsl.nix
-                  ] ++ [];         
+                  ] ++ [];   
                 };
               };
             })
