@@ -9,7 +9,6 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
       home-manager.url = "github:nix-community/home-manager";
-      helix.url = "github:helix-editor/helix/master";
     };
   outputs = inputs @ { self, nixpkgs, ... }: {
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
