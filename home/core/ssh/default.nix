@@ -12,5 +12,11 @@
     enable = true;
     userName = "zinc";
     userEmail = "zinc97neo@proton.me";
+    extraConfig = {
+      url."git@github.com:".insteadOf = "https://github.com/";
+    };
+    lfs = {
+      enable = true;
+    };
   };
 }
