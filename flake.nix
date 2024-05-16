@@ -9,6 +9,7 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
       home-manager.url = "github:nix-community/home-manager";
+      niri.url = "github:sodiboo/niri-flake";
     };
   outputs = inputs @ { self, nixpkgs, ... }: {
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
@@ -61,10 +62,16 @@
                 imports = [
                   ./home/desktop.nix
                 ] ++ [
+                  inputs.niri.homeModules.niri
                 ];
               };
             };
           })
+          {
+            nixpkgs.overlays = [
+              inputs.niri.overlays.niri
+            ];
+          }
         ];
       };
     };

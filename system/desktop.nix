@@ -17,6 +17,7 @@
     dconf.enable = true;
     light.enable = true;
   };
+  location.provider = "geoclue2";
   xdg.portal = {
     enable = true;
     # xdgOpenUsePortal = true;

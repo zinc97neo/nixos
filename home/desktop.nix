@@ -9,6 +9,7 @@ in
   imports = [
     ./core
     ./editor
+    ./gui
   ];
   home = {
     username = "${user}";

@@ -19,7 +19,10 @@ in
       jack.enable = true;
       wireplumber.enable = true;
     };
-    xserver.enable = false;
+    xserver = {
+      enable = true;
+      videoDrivers = [ "amdgpu" ];
+    };
     v2raya.enable = true;
     blueman.enable = true;
     upower.enable = true;
