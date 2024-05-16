@@ -2,6 +2,7 @@
   imports = [
     ./dev.nix
     ./shell
+    ./ssh
   ];
   home.packages = with pkgs; [
     # Interactively filter its input using fuzzy searching, not limit to filenames.

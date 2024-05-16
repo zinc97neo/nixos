@@ -16,7 +16,8 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     shellGlobalAliases = {
-      h = "sudo -E hx";
+      hx = "sudo -E hx";
+      h = "hx";
       zj = "zellij";
     };
     initExtra = ''
