@@ -1,0 +1,4 @@
+simplified_ui true
+default_layout "compact"
+pane_frames false
+theme "catppuccin-mocha"
