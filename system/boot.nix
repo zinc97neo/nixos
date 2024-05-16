@@ -7,7 +7,7 @@
         device = "nodev";
         efiSupport = true;
         font = "${pkgs.jetbrains-mono}/share/fonts/truetype/JetBrainsMonoNL-Regular.ttf";
-        fontSize = 34;
+        fontSize = 30;
       };
       efi = {
         canTouchEfiVariables = true;
