@@ -10,6 +10,9 @@
       wget
       just # a command runner(replacement of gnumake in some cases)
       curl
+      unzip
+      gnutar
+      gzip
     ];
   };
   time.timeZone = "Asia/Shanghai";

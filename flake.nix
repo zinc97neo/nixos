@@ -31,6 +31,7 @@
               sharedModules = [
                 (./. + "/machines/${config.machine.userName}.nix")
               ];
+              users.root = ./home/root.nix;
               users.${config.machine.userName} = {
                 imports = [
                   ./home/wsl.nix
@@ -56,6 +57,7 @@
               sharedModules = [
                 (./. + "/machines/${config.machine.userName}.nix")
               ];
+              users.root = ./home/root.nix;
               users.${config.machine.userName} = {
                 imports = [
                   ./home/desktop.nix

@@ -6,10 +6,10 @@
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
-      source-han-sans
       noto-fonts-emoji
+      source-han-sans
       jetbrains-mono
-      (nerdfonts.override { fonts = [ "FiraCode" "CodeNewRoman" "JetBrainsMono" ]; })
+      roboto
     ];
 
     fontconfig.defaultFonts = pkgs.lib.mkForce {
@@ -19,4 +19,5 @@
       emoji = [ "Noto Color Emoji" ];
     };
   };
+  console.font = "${pkgs.terminus_font}/share/consolefonts/ter-i32b.psf.gz";
 }
