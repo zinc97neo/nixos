@@ -1,7 +1,10 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 {
   boot = {
     loader = {
+      grub2-theme = {
+        screen = "2k";
+      };
       grub = {
         enable = true;
         device = "nodev";
