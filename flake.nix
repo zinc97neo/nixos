@@ -14,70 +14,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = inputs @ { self, nixpkgs, ... }: {
-    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
-    nixosConfigurations = {
-      wsl = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [
-          # include NixOS-WSL modules
-          inputs.nixos-wsl.nixosModules.wsl
-          ./system/wsl.nix
-          ./machines/windows-terminal
-          inputs.home-manager.nixosModules.home-manager
-          ({ config, ... }: {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = { inherit inputs; };
-              sharedModules = [
-                (./. + "/machines/${config.machine.userName}.nix")
-              ];
-              users.root = ./home/root.nix;
-              users.${config.machine.userName} = {
-                imports = [
-                  ./home/wsl.nix
-                ] ++ [
-                ];
-              };
-            };
-          })
-        ];
-      };
-      desktop = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./system/desktop.nix
-          inputs.grub2-theme.nixosModules.default
-          ./machines/desktop
-          inputs.home-manager.nixosModules.home-manager
-          ({ config, ... }: {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = { inherit inputs; };
-              sharedModules = [
-                (./. + "/machines/${config.machine.userName}.nix")
-              ];
-              users.root = ./home/root.nix;
-              users.${config.machine.userName} = {
-                imports = [
-                  ./home/desktop.nix
-                ] ++ [
-                  inputs.niri.homeModules.niri
-                ];
-              };
-            };
-          })
-          {
-            nixpkgs.overlays = [
-              inputs.niri.overlays.niri
-            ];
-          }
-        ];
-      };
-    };
+  outputs = inputs @ { self, nixpkgs, ... }: import ./outputs {
+    inherit inputs self nixpkgs;
   };
 }
