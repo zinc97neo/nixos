@@ -3,7 +3,9 @@
   boot = {
     loader = {
       grub2-theme = {
-        screen = "2k";
+        screen = "1080p";
+        theme = "whitesur";
+        splashImage = ../wallpaper/nixos-dark.png;
       };
       grub = {
         enable = true;

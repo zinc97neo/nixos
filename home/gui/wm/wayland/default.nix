@@ -15,4 +15,7 @@
     _JAVA_AWT_WM_NONREPARENTING = "1";
     XCURSOR_SIZE = "48";
   };
+  home.packages = with pkgs; [
+    hyprland
+  ];
 }

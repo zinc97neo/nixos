@@ -14,11 +14,10 @@
     # useful in bash/zsh prompt, not in nushell.
     eza = {
       enable = true;
-      enableBashIntegration = false;
       # do not enable aliases in nushell!
       enableNushellIntegration = false;
       git = true;
-      icons = true;
+      icons = false;
     };
     # a cat(1) clone with syntax highlighting and Git integration.
     bat = {
