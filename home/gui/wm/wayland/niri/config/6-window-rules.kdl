@@ -8,6 +8,13 @@ window-rule {
 }
 
 window-rule {
+  match app-id="Alacritty"
+  exclude is-active=true
+  opacity 0.85
+  default-column-width { proportion 0.4; }
+}
+
+window-rule {
   match app-id="firefox"
   default-column-width { proportion 0.8; }
 }

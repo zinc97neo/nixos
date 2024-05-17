@@ -1,5 +1,5 @@
 layout {
-  gaps 12
+  gaps 0
   center-focused-column "never"
   preset-column-widths {
     proportion 0.33333
@@ -12,13 +12,14 @@ layout {
     width 4
   }
   focus-ring {
+    off
     width 4
     active-gradient from="#d20f39" to="#fab387" angle=90
   }
   struts {
-    left 2
-    right 2
-    top 2
-    bottom 2
+    left 0
+    right 0
+    top 0
+    bottom 0
   }
 }

@@ -11,6 +11,6 @@
     editor = "hx";
     browser = "firefox";
     shell = pkgs.bash;
-    wallpaper = ../wallpaper/default.png;
+    wallpaper = ../wallpaper/gentoo-dark.png;
   };
 }
