@@ -19,5 +19,5 @@ window-rule {
 
 window-rule {
   match app-id="wlroots"
-  open-fullscreen true
+  default-column-width { proportion 1.0; }
 }

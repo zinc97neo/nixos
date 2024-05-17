@@ -21,6 +21,7 @@ nixpkgs.lib.nixosSystem {
             ../home/desktop.nix
           ] ++ [
             inputs.niri.homeModules.niri
+            inputs.hyprland.homeManagerModules.default
           ];
         };
       };

@@ -9,6 +9,7 @@
     };
     home-manager.url = "github:nix-community/home-manager";
     niri.url = "github:sodiboo/niri-flake";
+    hyprland.url = "github:hyprwm/Hyprland/v0.39.1";
     grub2-theme = {
       url = "github:vinceliuice/grub2-themes";
       inputs.nixpkgs.follows = "nixpkgs";

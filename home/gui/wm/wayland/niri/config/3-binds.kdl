@@ -1,5 +1,4 @@
 binds {
-
   Mod+Return { spawn "alacritty"; }
   Mod+Shift+E { quit; }
   Mod+Q { close-window; }

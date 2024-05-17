@@ -1,4 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
+let
+  user = "${config.machine.userName}";
+in
 {
   # Remove sound.enable or turn it off if you had it set previously, it seems to cause conflicts with pipewire
   sound.enable = false;
@@ -24,7 +27,21 @@
     blueman.enable = true;
     upower.enable = true;
     power-profiles-daemon.enable = true;
-    getty.autologinUser = "zinc";
+    greetd =
+      let
+        session = {
+          command = "$HOME/.niri-session";
+          user = user;
+        };
+      in
+      {
+        enable = true;
+        settings = {
+          terminal.vt = 1;
+          default_session = session;
+          initial_session = session;
+        };
+      };
     # kmscon = {
     #   enable = true;
     #   extraConfig = ''
