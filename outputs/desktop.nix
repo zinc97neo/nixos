@@ -15,10 +15,10 @@ nixpkgs.lib.nixosSystem {
         sharedModules = [
           (../. + "/machines/${config.machine.userName}.nix")
         ];
-        users.root = ../home/root.nix;
+        users.root = ../home/users/root.nix;
         users.${config.machine.userName} = {
           imports = [
-            ../home/desktop.nix
+            ../home/users/desktop.nix
           ] ++ [
             inputs.niri.homeModules.niri
             inputs.hyprland.homeManagerModules.default

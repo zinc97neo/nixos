@@ -4,8 +4,8 @@ let
 in
 {
   imports = [
-    ./core
-    ./editor/helix
+    ../core
+    ../editor/helix
   ];
   home = {
     username = "${user}";

@@ -16,10 +16,10 @@ nixpkgs.lib.nixosSystem {
         sharedModules = [
           (../. + "/machines/${config.machine.userName}.nix")
         ];
-        users.root = ./home/root.nix;
+        users.root = ../home/users/root.nix;
         users.${config.machine.userName} = {
           imports = [
-            ../home/wsl.nix
+            ../home/users/wsl.nix
           ] ++ [
           ];
         };

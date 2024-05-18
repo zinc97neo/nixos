@@ -7,9 +7,9 @@ let
 in
 {
   imports = [
-    ./core
-    ./editor
-    ./gui
+    ../core
+    ../editor
+    ../gui
   ];
   home = {
     username = "${user}";
