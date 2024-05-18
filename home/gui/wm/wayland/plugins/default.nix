@@ -1,6 +1,7 @@
 { config, ... }:
 let
   wallpaper = config.machine.wallpaper;
+  hyprland-wallpaper = config.machine.hyprland-wallpaper;
 in
 {
   programs.wpaperd = {
@@ -13,7 +14,7 @@ in
         path = "${wallpaper}";
       };
       WL-1 = {
-        path = "${wallpaper}";
+        path = "${hyprland-wallpaper}";
       };
     };
   };

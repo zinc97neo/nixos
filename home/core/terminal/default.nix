@@ -15,7 +15,7 @@
       ];
       font = {
         size = 26.0;
-        normal.family = "JetBrains Mono NL";
+        normal.family = "JetBrainsMono Nerd Font";
       };
       window = {
         dynamic_padding = false;

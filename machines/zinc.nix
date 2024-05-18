@@ -12,5 +12,6 @@
     browser = "firefox";
     shell = pkgs.bash;
     wallpaper = ../wallpaper/gentoo-dark.png;
+    hyprland-wallpaper = ../wallpaper/gentoo-rainbow.jpg;
   };
 }

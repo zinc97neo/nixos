@@ -10,13 +10,13 @@
       source-han-sans
       jetbrains-mono
       roboto
-      (nerdfonts.override { fonts = [ "FiraCode" "CodeNewRoman" "ComicShannsMono" "JetBrainsMono" ]; })
+      nerdfonts
     ];
 
     fontconfig.defaultFonts = pkgs.lib.mkForce {
-      serif = [ "Noto Serif" "Noto Serif CJK SC" ];
-      sansSerif = [ "Noto Sans" "Noto Sans CJK SC" ];
-      monospace = [ "JetBrainsMonoNL Nerd Font" ];
+      serif = [ "JetBrainsMono Nerd Font" "Noto Serif" "Noto Serif CJK SC" ];
+      sansSerif = [ "JetBrainsMono Nerd Font" "Noto Sans" "Noto Sans CJK SC" ];
+      monospace = [ "JetBrainsMono Nerd Font" ];
       emoji = [ "Noto Color Emoji" ];
     };
   };

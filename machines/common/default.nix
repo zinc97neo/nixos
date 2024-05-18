@@ -28,5 +28,8 @@ with lib;
     wallpaper = mkOption {
       type = types.path;
     };
+    hyprland-wallpaper = mkOption {
+      type = types.path;
+    };
   };
 }

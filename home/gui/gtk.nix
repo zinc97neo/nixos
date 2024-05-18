@@ -22,7 +22,7 @@
     };
 
     font = {
-      name = "JetBrains Mono NL";
+      name = "JetBrainsMono Nerd Font";
       size = 16;
     };
 
@@ -57,8 +57,8 @@
 
   home = {
     pointerCursor = {
-      package = pkgs.catppuccin-cursors.frappeRed;
-      name = "Catppuccin-Frappe-Red-Cursors";
+      package = pkgs.catppuccin-cursors.mochaLavender;
+      name = "Catppuccin-Mocha-Lavender-Cursors";
       size = 48;
       x11.enable = true;
       gtk.enable = true;

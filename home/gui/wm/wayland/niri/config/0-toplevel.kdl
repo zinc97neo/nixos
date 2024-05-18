@@ -3,7 +3,7 @@ spawn-at-startup "~/.hyprland-session"
 prefer-no-csd
 
 cursor {
-  xcursor-size 48
+  xcursor-size 96
 }
 
 environment {

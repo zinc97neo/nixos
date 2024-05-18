@@ -14,8 +14,12 @@
   home.file.".wshowkeys" = {
     text = ''
       #!/usr/bin/env bash
-      wshowkeys -b#24273a33 -f#209fb5cc -s#8839efcc -aleft -abottom -m4 -t1 -F"JetBrains Mono NL 24"
+      wshowkeys -b#24273a33 -f#209fb5cc -s#8839efcc -aleft -abottom -m4 -t1 -F"JetBrainsMonoNL Nerd Font 48"
     '';
+    executable = true;
+  };
+  home.file.".closewindow" = {
+    source = ./closewindow;
     executable = true;
   };
   programs.niri = {
@@ -23,4 +27,14 @@
     package = pkgs.niri-unstable;
     config = null;
   };
+  home.packages = with pkgs; [
+    cage
+    qutebrowser
+    (wechat-uos.override {
+      uosLicense = pkgs.fetchurl {
+        url = "https://aur.archlinux.org/cgit/aur.git/plain/license.tar.gz?h=wechat-uos-bwrap";
+        hash = "sha256-U3YAecGltY8vo9Xv/h7TUjlZCyiIQdgSIp705VstvWk=";
+      };
+    })
+  ];
 }
