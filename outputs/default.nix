@@ -5,4 +5,5 @@
     wsl = import ./wsl.nix { inherit inputs self nixpkgs; };
     desktop = import ./desktop.nix { inherit inputs self nixpkgs; };
   };
+  homeConfigurations = import ./linux.nix { inherit inputs self nixpkgs; };
 }
