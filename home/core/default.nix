@@ -8,6 +8,10 @@
   home.packages = with pkgs; [
     # Interactively filter its input using fuzzy searching, not limit to filenames.
     fzf
+    just
+    neofetch
+    # A memory safe implementation of sudo and su.
+    sudo-rs
   ];
   programs = {
     # A modern replacement for ‘ls’

@@ -6,14 +6,17 @@
 #
 ############################################################################
 fmt:
-    # format the nix files in this repo
-    sudo nix fmt
+  # format the nix files in this repo
+  sudo nix fmt
 
 wsl: fmt
   sudo nixos-rebuild switch --flake . #wsl --show-trace --verbose
 
 desktop: fmt
   sudo nixos-rebuild switch --flake . #desktop --show-trace --verbose
+
+gentoo: fmt
+  sudo home-manager switch --flake .#root
 
 up:
   sudo nix flake update
