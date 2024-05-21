@@ -18,10 +18,6 @@
     '';
     executable = true;
   };
-  home.file.".closewindow" = {
-    source = ./closewindow;
-    executable = true;
-  };
   programs.niri = {
     enable = true;
     package = pkgs.niri-unstable;

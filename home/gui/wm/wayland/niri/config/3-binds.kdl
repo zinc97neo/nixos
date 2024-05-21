@@ -1,7 +1,7 @@
 binds {
   Mod+Return { spawn "alacritty"; }
   Mod+Shift+E { quit; }
-  Mod+Q cooldown-ms=300 { spawn "~/.closewindow"; }
+  Mod+Q cooldown-ms=150 { close-window; }
 
   Mod+R { switch-preset-column-width; }
   Mod+F { maximize-column; }
