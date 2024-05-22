@@ -10,8 +10,6 @@
     fzf
     just
     neofetch
-    # A memory safe implementation of sudo and su.
-    sudo-rs
   ];
   programs = {
     # A modern replacement for ‘ls’
@@ -80,6 +78,14 @@
       enableBashIntegration = true;
       enableZshIntegration = true;
       enableNushellIntegration = true;
+    };
+    btop = {
+      enable = true;
+      settings = {
+        color_theme = "dracula";
+        theme_background = false;
+        update_ms = 500;
+      };
     };
   };
 }
