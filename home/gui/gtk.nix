@@ -50,15 +50,15 @@
     enable = true;
     platformTheme.name = "gtk";
     style = {
-      name = "gtk2";
+      name = "gtk4";
       package = config.gtk.theme.package;
     };
   };
 
   home = {
     pointerCursor = {
-      package = pkgs.catppuccin-cursors.mochaLavender;
-      name = "Catppuccin-Mocha-Lavender-Cursors";
+      package = pkgs.catppuccin-cursors.mochaRed;
+      name = "Catppuccin-Mocha-Red-Cursors";
       size = 48;
       x11.enable = true;
       gtk.enable = true;

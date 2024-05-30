@@ -8,10 +8,15 @@ window-rule {
 }
 
 window-rule {
-  match app-id="Alacritty"
-  exclude is-active=true
-  opacity 0.85
+  match app-id="kitty"
+  opacity 0.9
   default-column-width { proportion 0.4; }
+}
+
+window-rule {
+  match app-id="kitty"
+  exclude is-active=true
+  opacity 0.7
 }
 
 window-rule {
@@ -22,9 +27,4 @@ window-rule {
 window-rule {
   match app-id="neovide"
   default-column-width { proportion 0.7; }
-}
-
-window-rule {
-  match app-id="wlroots"
-  default-column-width { proportion 1.0; }
 }

@@ -30,7 +30,7 @@ in
     greetd =
       let
         session = {
-          command = "$HOME/.niri-session";
+          command = "niri";
           user = user;
         };
       in
@@ -42,29 +42,6 @@ in
           initial_session = session;
         };
       };
-    kmscon = {
-      enable = true;
-      extraConfig = ''
-        font-size=30
-        font-name=IosevkaTerm Nerd Font Mono
-        palette-black=20, 20, 20
-        palette-red=210, 15, 57
-        palette-green=166, 218, 149
-        palette-yellow=223, 142, 29
-        palette-blue=127,187,179
-        palette-cyan=4, 165, 229
-        palette-light-red=255, 15, 57
-        palette-light-green=160, 255, 140
-        palette-light-yellow=255, 222, 29
-        palette-light-blue=138, 173, 244
-        palette-light-cyan=44, 199, 229
-        palette-background=36, 39, 58
-        palette-foreground=221, 205, 188
-      '';
-      extraOptions = "--term xterm-256color --palette custom";
-      autologinUser = "zinc";
-      hwRender = true;
-    };
     keyd = {
       enable = true;
       keyboards = {

@@ -2,7 +2,6 @@
 {
   imports = [
     ./niri
-    ./hyprland
     ./plugins
   ];
   # make stuff work on wayland

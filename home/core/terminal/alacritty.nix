@@ -14,7 +14,7 @@
         "~/.config/alacritty/theme/catppuccin-macchiato.toml"
       ];
       font = {
-        size = 26.0;
+        size = 14.0;
         normal.family = "JetBrainsMono Nerd Font";
       };
       window = {

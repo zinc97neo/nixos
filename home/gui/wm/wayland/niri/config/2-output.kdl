@@ -1,12 +1,5 @@
 output "eDP-1" {
   mode "2880x1800@90"
-  scale 1.0
-  transform "normal"
-  position x=720 y=0
-}
-
-output "winit" {
-  mode "2880x1800@90"
   scale 2.0
   transform "normal"
   position x=720 y=0

@@ -1,14 +1,14 @@
 spawn-at-startup "wpaperd" "-d"
-spawn-at-startup "~/.hyprland-session"
 prefer-no-csd
 
 cursor {
-  xcursor-size 96
+  xcursor-size 48
 }
 
 environment {
   QT_QPA_PLATFORM "wayland"
-  DISPLAY null
+  QT_QPA_PLATFORMTHEME "gtk4"
+  DISPLAY ":0"
   NIXOS_OZONE_WL "1"
   MOZ_ENABLE_WAYLAND "1"
   MOZ_WEBRENDER "1"

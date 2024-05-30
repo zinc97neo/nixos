@@ -7,7 +7,9 @@ nixpkgs.lib.nixosSystem {
     inputs.grub2-theme.nixosModules.default
     ../machines/desktop
     inputs.home-manager.nixosModules.home-manager
+    inputs.nix-ld.nixosModules.nix-ld
     ({ config, ... }: {
+      programs.nix-ld.dev.enable = true;
       home-manager = {
         useGlobalPkgs = true;
         useUserPackages = true;
@@ -21,7 +23,6 @@ nixpkgs.lib.nixosSystem {
             ../home/users/desktop.nix
           ] ++ [
             inputs.niri.homeModules.niri
-            inputs.hyprland.homeManagerModules.default
           ];
         };
       };

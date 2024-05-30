@@ -7,21 +7,21 @@
 ############################################################################
 fmt:
   # format the nix files in this repo
-  sudo nix fmt
+  nix fmt
 
 wsl: fmt
-  sudo nixos-rebuild switch --flake . #wsl --show-trace --verbose
+  nixos-rebuild switch --flake . #wsl --show-trace --verbose
 
 desktop: fmt
-  sudo nixos-rebuild switch --flake . #desktop --show-trace --verbose
+  nixos-rebuild switch --flake . #desktop --show-trace --verbose
 
 gentoo: fmt
-  sudo home-manager switch --flake .#root
+  home-manager switch --flake .#root
 
 up:
-  sudo nix flake update
+  nix flake update
 
 gc:
   # garbage collect all unused nix store entries
-  sudo nix store gc --debug
-  sudo nix-collect-garbage --delete-old
+  nix store gc --debug
+  nix-collect-garbage --delete-old
