@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   home.file.".config/alacritty/theme" = {
     source = ../themes/alacritty;
@@ -7,7 +7,7 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      shell.program = "zsh";
+      shell.program = "${pkgs.zsh}/bin/zsh";
       env.TERM = "xterm-256color";
       terminal.osc52 = "CopyPaste";
       import = [
@@ -15,7 +15,7 @@
       ];
       font = {
         size = 14.0;
-        normal.family = "JetBrainsMono Nerd Font";
+        normal.family = "CodeNewRoman Nerd Font";
       };
       window = {
         dynamic_padding = false;

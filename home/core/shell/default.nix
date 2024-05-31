@@ -35,8 +35,7 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     shellGlobalAliases = {
-      hx = "sudo -E hx";
-      h = "hx";
+      h = "niri msg action spawn -- 'kitty' 'hx' '.' & niri msg action maximize-column";
       zj = "zellij";
     };
     initExtra = ''
