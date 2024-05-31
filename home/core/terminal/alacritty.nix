@@ -15,8 +15,9 @@
       ];
       font = {
         size = 14.0;
-        normal.family = "CodeNewRoman Nerd Font";
+        normal.family = "JetBrainsMono Nerd Font Mono";
       };
+      color.draw_bold_text_with_bright_colors = true;
       window = {
         dynamic_padding = false;
         opacity = 1.0;
