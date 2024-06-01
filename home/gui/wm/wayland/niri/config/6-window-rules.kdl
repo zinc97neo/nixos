@@ -1,34 +1,42 @@
 window-rule {
+  geometry-corner-radius 6
+  clip-to-geometry true
   draw-border-with-background false
 }
 
 window-rule {
-  match app-id="Alacritty"
-  opacity 0.95
-  default-column-width { proportion 0.4; }
+  match is-focused=false
+  opacity 0.85
 }
 
 window-rule {
-  match app-id="kitty"
-  default-column-width { proportion 0.9; }
-  geometry-corner-radius 4
-  clip-to-geometry true
+  match app-id="Alacritty"
+  default-column-width { proportion 0.3; }
   border {
     on
-    width 4
+    width 3
     active-color "#ed8796"
     inactive-color "#ed8796"
   }
 }
 
 window-rule {
-  match app-id="qutebrowser"
-  default-column-width { proportion 0.95; }
-  geometry-corner-radius 4
-  clip-to-geometry true
+  match app-id="kitty"
+  default-column-width { proportion 0.6; }
   border {
     on
-    width 4
+    width 3
+    active-gradient from="#c6a0f6" to="#8aadf4" angle=90
+    inactive-gradient from="#c6a0f6" to="#8aadf4" angle=90
+  }
+}
+
+window-rule {
+  match app-id="qutebrowser"
+  default-column-width { proportion 0.95; }
+  border {
+    on
+    width 3
     active-color "#a6da95"
     inactive-color "#a6da95"
   }

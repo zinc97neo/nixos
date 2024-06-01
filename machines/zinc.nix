@@ -11,6 +11,6 @@
     editor = "hx";
     browser = "firefox";
     shell = pkgs.bash;
-    wallpaper = ../wallpaper/mountain-town.jpeg;
+    wallpaper = ../wallpaper/catpuccin-wall.jpg;
   };
 }

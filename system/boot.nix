@@ -3,16 +3,15 @@
   boot = {
     loader = {
       grub2-theme = {
-        screen = "1080p";
-        theme = "whitesur";
-        splashImage = ../wallpaper/nixos-dark.png;
+        screen = "4k";
+        theme = "vimix";
+        icon = "color";
+        splashImage = ../wallpaper/catpuccin.jpg;
       };
       grub = {
         enable = true;
         device = "nodev";
         efiSupport = true;
-        font = "${pkgs.jetbrains-mono}/share/fonts/truetype/JetBrainsMonoNL-Regular.ttf";
-        fontSize = 30;
       };
       efi = {
         canTouchEfiVariables = true;
@@ -29,3 +28,4 @@
     initrd.verbose = false;
   };
 }
+

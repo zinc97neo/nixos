@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   imports = [
+
     ./dev.nix
     ./shell
     ./ssh
@@ -9,7 +10,6 @@
     # Interactively filter its input using fuzzy searching, not limit to filenames.
     fzf
     just
-    neofetch
   ];
   programs = {
     # A modern replacement for ‘ls’

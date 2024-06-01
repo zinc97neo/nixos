@@ -35,7 +35,6 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     shellGlobalAliases = {
-      e = "niri msg action spawn -- kitty hx $(pwd)";
       zj = "zellij";
     };
     initExtra = ''
