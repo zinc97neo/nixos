@@ -15,9 +15,15 @@
       ];
       font = {
         size = 14.0;
-        normal.family = "JetBrainsMono Nerd Font Mono";
+        normal.family = "jetbrains mono nerd font";
+        normal.style = "Regular";
+        bold.family = "jetbrains mono nerd font";
+        bold.style = "Bold";
+        italic.family = "jetbrains mono nerd font";
+        italic.style = "Italic";
+        bold_italic.family = "jetbrains mono nerd font";
+        bold_italic.style = "Bold Italic";
       };
-      color.draw_bold_text_with_bright_colors = true;
       window = {
         dynamic_padding = false;
         opacity = 1.0;

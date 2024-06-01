@@ -5,10 +5,10 @@
     enableCompletion = true;
     bashrcExtra = ''
       if [ "$TERM" = "linux" ]; then
-          echo -en "\e]P0171E20" #black
+          echo -en "\e]P024273A" #black
           echo -en "\e]P87A8478" #darkgrey
           echo -en "\e]P14C3743" #darkred
-          echo -en "\e]P9E67E89" #red
+          echo -en "\e]P9D20F39" #red
           echo -en "\e]P23C4841" #darkgreen
           echo -en "\e]PAA7C080" #green
           echo -en "\e]P3FEA44C" #brown
@@ -20,7 +20,7 @@
           echo -en "\e]P649AEE6" #darkcyan
           echo -en "\e]PE05A1F7" #cyan
           echo -en "\e]P79DA9A0" #lightgrey
-          echo -en "\e]PFF3D6CA" #white
+          echo -en "\e]PFCAD3F5" #white
       fi
       clear
     '';
@@ -35,7 +35,7 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     shellGlobalAliases = {
-      h = "niri msg action spawn -- 'kitty' 'hx' '.' & niri msg action maximize-column";
+      e = "niri msg action spawn -- kitty hx $(pwd)";
       zj = "zellij";
     };
     initExtra = ''

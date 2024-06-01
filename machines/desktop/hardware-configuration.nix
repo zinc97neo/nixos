@@ -2,6 +2,7 @@
 # and may be overwritten by future invocations.  Please make changes
 # to /etc/nixos/configuration.nix instead.
 { config, lib, pkgs, modulesPath, ... }:
+
 {
   imports =
     [
@@ -9,40 +10,40 @@
     ];
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usb_storage" "sd_mod" "sdhci_pci" ];
-  boot.initrd.kernelModules = [ "amdgpu" ];
+  boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
     {
-      device = "/dev/disk/by-uuid/e63acfde-1d2e-4e99-9a18-f2d4bfa5d2fd";
+      device = "/dev/disk/by-uuid/4457b48a-98b4-4662-af88-0d09bd14b676";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
     };
 
   fileSystems."/home" =
     {
-      device = "/dev/disk/by-uuid/e63acfde-1d2e-4e99-9a18-f2d4bfa5d2fd";
+      device = "/dev/disk/by-uuid/4457b48a-98b4-4662-af88-0d09bd14b676";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" ];
     };
 
   fileSystems."/nix" =
     {
-      device = "/dev/disk/by-uuid/e63acfde-1d2e-4e99-9a18-f2d4bfa5d2fd";
+      device = "/dev/disk/by-uuid/4457b48a-98b4-4662-af88-0d09bd14b676";
       fsType = "btrfs";
       options = [ "subvol=nix" "noatime" "compress=zstd" ];
     };
 
   fileSystems."/boot" =
     {
-      device = "/dev/disk/by-uuid/55D3-989B";
+      device = "/dev/disk/by-uuid/7941-8D6E";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
   swapDevices =
-    [{ device = "/dev/disk/by-uuid/26f7fd5d-0099-45d9-a0d9-6cfaf4ba65ae"; }];
+    [{ device = "/dev/disk/by-uuid/0cfa5c3c-41ae-4066-9575-24edcd8cf90e"; }];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's

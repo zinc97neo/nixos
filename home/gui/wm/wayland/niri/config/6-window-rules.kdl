@@ -4,34 +4,26 @@ window-rule {
 
 window-rule {
   match app-id="Alacritty"
+  opacity 0.95
   default-column-width { proportion 0.4; }
-}
-
-window-rule {
-  match app-id="Alacritty"
-  exclude is-active=true
-  opacity 0.7
 }
 
 window-rule {
   match app-id="kitty"
-  default-column-width { proportion 0.4; }
-}
-
-window-rule {
-  match app-id="wezterm"
-  default-column-width { proportion 0.95; }
-  geometry-corner-radius 4
+  default-column-width { proportion 0.9; }
+  geometry-corner-radius 12
   clip-to-geometry true
   border {
+    on
     width 2
-    active-gradient from="#80c8ff" to="#bbddff" angle=45
+    active-color "#ed8796"
+    inactive-color "#ed8796"
   }
 }
 
 window-rule {
   match app-id="qutebrowser"
-  default-column-width { proportion 0.9; }
+  default-column-width { proportion 0.95; }
 }
 
 window-rule {
