@@ -11,11 +11,11 @@ window-rule {
 window-rule {
   match app-id="kitty"
   default-column-width { proportion 0.9; }
-  geometry-corner-radius 12
+  geometry-corner-radius 4
   clip-to-geometry true
   border {
     on
-    width 2
+    width 4
     active-color "#ed8796"
     inactive-color "#ed8796"
   }
@@ -24,6 +24,14 @@ window-rule {
 window-rule {
   match app-id="qutebrowser"
   default-column-width { proportion 0.95; }
+  geometry-corner-radius 4
+  clip-to-geometry true
+  border {
+    on
+    width 4
+    active-color "#a6da95"
+    inactive-color "#a6da95"
+  }
 }
 
 window-rule {
