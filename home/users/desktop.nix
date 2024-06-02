@@ -10,6 +10,7 @@ in
     ../core
     ../editor
     ../gui
+    ../input
   ];
   home = {
     username = "${user}";

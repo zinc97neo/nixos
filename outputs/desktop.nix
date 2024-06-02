@@ -1,6 +1,10 @@
 { inputs, self, nixpkgs, ... }:
-nixpkgs.lib.nixosSystem {
+let
   system = "x86_64-linux";
+  selfPkgs = import ../pkgs;
+in
+nixpkgs.lib.nixosSystem {
+  inherit system;
   specialArgs = { inherit inputs; };
   modules = [
     ../system/desktop.nix
@@ -30,6 +34,7 @@ nixpkgs.lib.nixosSystem {
     {
       nixpkgs.overlays = [
         inputs.niri.overlays.niri
+        selfPkgs.overlay
       ];
     }
   ];

@@ -12,6 +12,7 @@
       unzip
       gnutar
       gzip
+      nvfetcher
     ];
   };
   time.timeZone = "Asia/Shanghai";

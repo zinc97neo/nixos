@@ -1,4 +1,5 @@
 spawn-at-startup "wpaperd" "-d"
+spawn-at-startup "fcitx5" "-d" "--replace"
 prefer-no-csd
 
 cursor {
@@ -8,7 +9,7 @@ cursor {
 environment {
   QT_QPA_PLATFORM "wayland"
   QT_QPA_PLATFORMTHEME "gtk4"
-  DISPLAY ":0"
+  DISPLAY null
   NIXOS_OZONE_WL "1"
   MOZ_ENABLE_WAYLAND "1"
   MOZ_WEBRENDER "1"
