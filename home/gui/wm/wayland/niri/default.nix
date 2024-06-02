@@ -19,4 +19,11 @@
     '';
     executable = true;
   };
+  home.file.".fcitx5-restart" = {
+    text = ''
+      #!/usr/bin/env bash
+      pkill fcitx5 -9; sleep 1; fcitx5 -d --replace; sleep 1; fcitx5-remote -r
+    '';
+    executable = true;
+  };
 }

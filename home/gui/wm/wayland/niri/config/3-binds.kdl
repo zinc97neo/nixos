@@ -1,6 +1,7 @@
 binds {
   Mod+Return { spawn "kitty"; }
   Mod+B { spawn "qutebrowser"; }
+  Mod+Ctrl+Space { spawn "~/.fcitx5-restart"; }
   Mod+Shift+E { quit; }
   Mod+Q { close-window; }
 
@@ -40,6 +41,7 @@ binds {
   Mod+7 { focus-workspace 7; }
   Mod+8 { focus-workspace 8; }
   Mod+9 { focus-workspace 9; }
+
   Mod+Ctrl+1 { move-column-to-workspace 1; }
   Mod+Ctrl+2 { move-column-to-workspace 2; }
   Mod+Ctrl+3 { move-column-to-workspace 3; }
