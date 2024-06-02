@@ -1,6 +1,7 @@
 binds {
   Mod+Return { spawn "kitty"; }
   Mod+B { spawn "qutebrowser"; }
+  Mod+Space { spawn "anyrun"; }
   Mod+Ctrl+Space { spawn "~/.fcitx5-restart"; }
   Mod+Shift+E { quit; }
   Mod+Q { close-window; }

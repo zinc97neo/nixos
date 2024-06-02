@@ -27,6 +27,7 @@ nixpkgs.lib.nixosSystem {
             ../home/users/desktop.nix
           ] ++ [
             inputs.niri.homeModules.niri
+            inputs.anyrun.homeManagerModules.default
           ];
         };
       };

@@ -17,6 +17,11 @@
       url = "github:vinceliuice/grub2-themes";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    anyrun.url = "github:Kirottu/anyrun";
+    anyrun-plugins = {
+      url = "github:wuliuqii/anyrun-plugins";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = inputs @ { self, nixpkgs, ... }: import ./outputs {
     inherit inputs self nixpkgs;
