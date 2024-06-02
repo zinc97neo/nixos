@@ -11,11 +11,6 @@
     "fcitx5/conf/classicui.conf".source = ./classicui.conf;
   };
 
-  # home.file.".local/share/fcitx5/rime" = {
-  #   source = ./rime;
-  #   recursive = true;
-  # };
-
   home.file.".local/share/fcitx5/themes" = {
     source = ./themes;
     executable = true;
@@ -23,16 +18,4 @@
   };
 
 
-  i18n.inputMethod = {
-    enabled = "fcitx5";
-    fcitx5 = {
-      addons = with pkgs; [
-        fcitx5-gtk # gtk im module
-        fcitx5-chinese-addons
-        (fcitx5-rime.override {
-          librime = librime-with-plugins;
-        })
-      ];
-    };
-  };
 }

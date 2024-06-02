@@ -13,3 +13,7 @@ fetch.github = "lotem/librime-octagram"
 [librime-proto]
 src.git = "https://github.com/lotem/librime-proto.git"
 fetch.github = "lotem/librime-proto"
+
+[rime-ice]
+src.git = "https://github.com/iDvel/rime-ice"
+fetch.github = "iDvel/rime-ice"

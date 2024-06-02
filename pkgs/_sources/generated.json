@@ -78,5 +78,25 @@
             "type": "github"
         },
         "version": "657a923cd4c333e681dc943e6894e6f6d42d25b4"
+    },
+    "rime-ice": {
+        "cargoLocks": null,
+        "date": "2024-06-02",
+        "extract": null,
+        "name": "rime-ice",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "iDvel",
+            "repo": "rime-ice",
+            "rev": "69381881ef09b41d9bbbe523504a346d301f1547",
+            "sha256": "sha256-dbf++KFfCQ4m+HoWk6UGTBS1ajyiCGMhNM5O0D3YuTQ=",
+            "type": "github"
+        },
+        "version": "69381881ef09b41d9bbbe523504a346d301f1547"
     }
 }
