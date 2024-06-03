@@ -8,7 +8,7 @@
     users.${config.machine.userName} = {
       inherit (config.machine) hashedPassword shell;
       isNormalUser = true;
-      extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" ];
+      extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" "bluetooth" ];
     };
   };
 }

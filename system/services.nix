@@ -24,7 +24,6 @@ in
       videoDrivers = [ "amdgpu" ];
     };
     v2raya.enable = true;
-    blueman.enable = true;
     upower.enable = true;
     power-profiles-daemon.enable = true;
     greetd =

@@ -10,9 +10,9 @@
 }
 
 box#main {
-  background-color: rgba(36, 39, 58, 1);
-  border: 4px solid rgba(183, 189, 248, 0.5);
-  border-radius: 6px;
+  background-color: rgba(36, 39, 58, 0.9);
+  border: 4px solid rgba(183, 189, 248, 0.8);
+  border-radius: 8px;
   padding: 14px;
 }
 
@@ -20,13 +20,13 @@ box#main {
   background-color: rgba(36, 39, 58, 1);
   border: 2px solid rgba(26, 29, 48, 0.8);
   box-shadow: 2px 2px 4px rgba(2, 4, 6, 0.9), -3px -3px 6px rgba(65, 75, 105, 0.9);
-  border-radius: 6px;
+  border-radius: 8px;
   margin: 2px;
   padding: 6px;
 }
 
 #match.activatable {
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 6px;
   margin-top: 2px;
   box-shadow: none;
@@ -41,13 +41,13 @@ box#main {
 }
 
 #match:selected {
-  color: rgb(255, 255, 255);
+  color: rgb(165, 173, 203);
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(26, 29, 48, 0.8);
 }
 
 list>#plugin {
-  border-radius: 6px;
+  border-radius: 8px;
   margin: 0 2px;
 }
 

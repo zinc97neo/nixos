@@ -8,6 +8,7 @@
     ./font.nix
     ./security.nix
     ./services.nix
+    ./hardware.nix
   ];
   networking = {
     hostName = "desktop";
