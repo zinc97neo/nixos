@@ -67,7 +67,7 @@
     battery_display="off"
     disk_display="off"
     image_backend="kitty"
-    image_source="${./catpuccin.png}"
+    image_source="${./catppuccin.png}"
     ascii_distro="auto"
     ascii_colors=(distro)
     ascii_bold="on"
