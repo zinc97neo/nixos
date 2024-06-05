@@ -15,7 +15,7 @@ window-rule {
   default-column-width { proportion 0.4; }
   border {
     on
-    width 4
+    width 3
     active-color "#179299"
     inactive-color "#179299"
   }
@@ -37,7 +37,7 @@ window-rule {
   default-column-width { proportion 0.95; }
   border {
     on
-    width 4
+    width 3
     active-color "#c6a0f6"
     inactive-color "#c6a0f6"
   }

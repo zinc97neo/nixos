@@ -1,7 +1,8 @@
 { ... }:
 {
   imports = [
-    ./anyrun.nix
+    ./anyrun
+    ./waybar
     ./wallpaper.nix
   ];
 }
