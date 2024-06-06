@@ -4,7 +4,7 @@
     ./shell
     ./ssh
     ./terminal
-    ./neofetch
+    ./fastfetch
   ];
   home.packages = with pkgs; [
     # Interactively filter its input using fuzzy searching, not limit to filenames.

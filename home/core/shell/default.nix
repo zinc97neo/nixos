@@ -38,6 +38,9 @@
       zj = "zellij";
     };
     initExtra = ''
+      if [ "$TERM" = "xterm-kitty" ]; then
+        fastfetch
+      fi
     '';
     envExtra = ''
       export EDITOR="hx";
