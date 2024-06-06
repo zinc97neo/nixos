@@ -6,7 +6,7 @@
         screen = "4k";
         theme = "vimix";
         icon = "color";
-        splashImage = ../wallpaper/catppuccin.jpg;
+        splashImage = ../wallpaper/catppuccin16x10-2k.png;
       };
       grub = {
         enable = true;
