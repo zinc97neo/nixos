@@ -61,4 +61,14 @@
       };
     };
   };
+  vscode-json-language-server = {
+    command = "${vscode-langservers-extracted}/bin/vscode-json-language-server";
+    args = [ "--stdio" ];
+    config = {
+      provideFormatter = true;
+      json = {
+        validate = { enable = true; };
+      };
+    };
+  };
 }

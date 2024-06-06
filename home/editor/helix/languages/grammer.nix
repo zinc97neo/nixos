@@ -46,4 +46,12 @@
     name = "typescript";
     source = { git = "https://github.com/tree-sitter/tree-sitter-typescript"; rev = "b1bf4825d9eaa0f3bdeb1e52f099533328acfbdf"; subpath = "typescript"; };
   }
+  {
+    name = "json";
+    source = { git = "https://github.com/tree-sitter/tree-sitter-json"; rev = "73076754005a460947cafe8e03a8cf5fa4fa2938"; };
+  }
+  {
+    name = "json5";
+    source = { git = "https://github.com/Joakker/tree-sitter-json5"; rev = "c23f7a9b1ee7d45f516496b1e0e4be067264fa0d"; };
+  }
 ]

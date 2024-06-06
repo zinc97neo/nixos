@@ -7,6 +7,6 @@
   shebangs = [ "deno" "bun" "ts-node" ];
   comment-token = "//";
   block-comment-tokens = { start = "/*"; end = "*/"; };
-  language-servers = [ "typescript-language-server" ];
+  language-servers = [ "typescript-language-server" "codeium" ];
   indent = { tab-width = 2; unit = "  "; };
 }
