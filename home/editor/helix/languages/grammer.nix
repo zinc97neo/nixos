@@ -42,4 +42,8 @@
       rev = "c478c6868648eff49eb04a4df90d703dc45b312a";
     };
   }
+  {
+    name = "typescript";
+    source = { git = "https://github.com/tree-sitter/tree-sitter-typescript"; rev = "b1bf4825d9eaa0f3bdeb1e52f099533328acfbdf"; subpath = "typescript"; };
+  }
 ]

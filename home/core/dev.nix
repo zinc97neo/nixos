@@ -16,6 +16,9 @@
     cargo-nextest
     taplo
     vscode-extensions.vadimcn.vscode-lldb.adapter
+    # nodejs
+    nodejs_22
+    corepack_22
   ];
 
   home.file = {

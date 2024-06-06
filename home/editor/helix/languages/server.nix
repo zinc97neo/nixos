@@ -24,6 +24,27 @@
   typescript-language-server = {
     command = "${nodePackages_latest.typescript-language-server}/bin/typescript-language-server";
     ags = [ "--stdio" ];
+    config = {
+      hostInfo = "helix";
+      typescript.inlayHints = {
+        includeInlayEnumMemberValueHints = true;
+        includeInlayFunctionLikeReturnTypeHints = true;
+        includeInlayFunctionParameterTypeHints = true;
+        includeInlayParameterNameHints = "all";
+        includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+        includeInlayPropertyDeclarationTypeHints = true;
+        includeInlayVariableTypeHints = true;
+      };
+      javascript.inlayHints = {
+        includeInlayEnumMemberValueHints = true;
+        includeInlayFunctionLikeReturnTypeHints = true;
+        includeInlayFunctionParameterTypeHints = true;
+        includeInlayParameterNameHints = "all";
+        includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+        includeInlayPropertyDeclarationTypeHints = true;
+        includeInlayVariableTypeHints = true;
+      };
+    };
   };
   vscode-html-language-server = {
     command = "${vscode-langservers-extracted}/bin/vscode-html-language-server";
