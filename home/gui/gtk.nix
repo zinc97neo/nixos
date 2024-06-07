@@ -22,7 +22,7 @@
     };
 
     font = {
-      name = "JetBrainsMono Nerd Font";
+      name = "Maple Mono SC NF";
       size = 16;
     };
 

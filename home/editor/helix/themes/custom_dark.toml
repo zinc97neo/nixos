@@ -27,7 +27,8 @@
 
 "keyword" = "mauve"
 "keyword.storage.modifier.ref" = "teal"
-"keyword.control.conditional" = { fg = "mauve", modifiers = ["italic"] }
+"keyword.control" = { fg = "mauve", modifiers = ["italic"] }
+"keyword.function" = { fg = "latte_mauve", modifiers = ["italic"] }
 
 "operator" = "sky"
 
@@ -161,3 +162,5 @@ cursorline = "#2a2b3c"
 secondary_cursor = "#b5a6a8"
 secondary_cursor_normal = "#878ec0"
 secondary_cursor_insert = "#7da87e"
+
+latte_mauve = "#8839ef"

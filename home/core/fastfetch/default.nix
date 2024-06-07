@@ -61,6 +61,7 @@
           type = "font";
           key = " ";
           keyColor = "yellow";
+          format = "{5}";
         }
         {
           type = "shell";
