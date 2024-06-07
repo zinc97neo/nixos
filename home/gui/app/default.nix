@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     pavucontrol
     blueberry
+    neovide
   ];
   programs = {
     mpv = {

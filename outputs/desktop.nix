@@ -1,4 +1,4 @@
-{ inputs, self, nixpkgs, ... }:
+{ inputs, nixpkgs, ... }:
 let
   system = "x86_64-linux";
   selfPkgs = import ../pkgs;
@@ -26,9 +26,10 @@ nixpkgs.lib.nixosSystem {
           imports = [
             ../home/users/desktop.nix
           ] ++ [
-            inputs.niri.homeModules.niri
             inputs.ags.homeManagerModules.default
             inputs.anyrun.homeManagerModules.default
+            inputs.niri.homeModules.niri
+            inputs.nixvim.homeManagerModules.nixvim
           ];
         };
       };
