@@ -7,16 +7,14 @@
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
       noto-fonts-emoji
-      source-han-sans
-      jetbrains-mono
+      maple-mono-SC-NF
       roboto
-      nerdfonts
     ];
 
     fontconfig.defaultFonts = pkgs.lib.mkForce {
-      serif = [ "JetBrainsMono Nerd Font" "Noto Serif" "Noto Serif CJK SC" ];
-      sansSerif = [ "JetBrainsMono Nerd Font" "Noto Sans" "Noto Sans CJK SC" ];
-      monospace = [ "JetBrainsMono Nerd Font" ];
+      serif = [ "Maple Mono SC NF" "Noto Serif" "Noto Serif CJK SC" ];
+      sansSerif = [ "Maple Mono SC NF" "Noto Sans" "Noto Sans CJK SC" ];
+      monospace = [ "Maple Mono SC NF" ];
       emoji = [ "Noto Color Emoji" ];
     };
   };

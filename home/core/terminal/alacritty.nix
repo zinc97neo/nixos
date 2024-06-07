@@ -15,13 +15,13 @@
       ];
       font = {
         size = 14.0;
-        normal.family = "jetbrains mono nerd font";
+        normal.family = "Maple Mono SC NF";
         normal.style = "Regular";
-        bold.family = "jetbrains mono nerd font";
+        bold.family = "Maple Mono SC NF";
         bold.style = "Bold";
-        italic.family = "jetbrains mono nerd font";
+        italic.family = "Maple Mono SC NF";
         italic.style = "Italic";
-        bold_italic.family = "jetbrains mono nerd font";
+        bold_italic.family = "Maple Mono SC NF";
         bold_italic.style = "Bold Italic";
       };
       window = {
