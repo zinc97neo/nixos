@@ -29,7 +29,6 @@ nixpkgs.lib.nixosSystem {
             inputs.ags.homeManagerModules.default
             inputs.anyrun.homeManagerModules.default
             inputs.niri.homeModules.niri
-            inputs.nixvim.homeManagerModules.nixvim
           ];
         };
       };
