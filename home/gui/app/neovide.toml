@@ -1,3 +1,5 @@
+neovim-bin = "zincvim"
+
 [font]
 normal = ["Maple Mono SC NF"]
 size = 16

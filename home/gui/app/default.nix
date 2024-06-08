@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 {
   home.packages = with pkgs; [
     pavucontrol
@@ -26,8 +26,17 @@
     };
   };
   xdg.configFile = {
-    "neovide/config.toml" = {
-      source = ./neovide.toml;
-    };
+    "neovide/config.toml" =
+      let
+        zincvim =
+          inputs.zincvim.packages."${pkgs.system}".default;
+        # content = builtins.replaceStrings "zincvim" "${zincvim}/bin/zincvim" (builtins.readFile ./neovide.toml);
+        content = builtins.readFile ./neovide.toml;
+        last-contet =
+          builtins.replaceStrings [ "zincvim" ] [ "${zincvim}/bin/zincvim" ] content;
+      in
+      {
+        text = last-contet;
+      };
   };
 }
