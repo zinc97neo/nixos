@@ -10,7 +10,7 @@
     ];
     extraConfigLua = ''
       if vim.g.neovide then
-        vim.o.guifont = "Maple Mono SC NF:h16"
+        vim.g.neovide_cursor_animation_length = 0.12
         vim.cmd([[
           set background=light
           let g:everforest_background = 'soft'

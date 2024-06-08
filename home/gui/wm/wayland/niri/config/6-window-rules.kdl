@@ -45,5 +45,11 @@ window-rule {
 
 window-rule {
   match app-id="neovide"
-  default-column-width { proportion 0.7; }
+  default-column-width { proportion 0.95; }
+  border {
+    on
+    width 4
+    active-color "#a6da95"
+    inactive-color "#a6da95"
+  }
 }

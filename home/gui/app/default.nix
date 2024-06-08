@@ -25,4 +25,9 @@
       };
     };
   };
+  xdg.configFile = {
+    "neovide/config.toml" = {
+      source = ./neovide.toml;
+    };
+  };
 }
