@@ -4,6 +4,7 @@ let
   editor = config.machine.editor;
   browser = config.machine.browser;
   terminal = config.machine.terminal;
+  catppuccin = config.machine.catppuccin;
 in
 {
   imports = [
@@ -21,6 +22,7 @@ in
       TERMINAL = "${terminal}";
     };
   };
+  catppuccin = catppuccin;
   programs.home-manager.enable = true;
   home.stateVersion = "24.05";
 }

@@ -51,14 +51,26 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "69381881ef09b41d9bbbe523504a346d301f1547";
+    version = "af2480ba1b147a6a54c0c21e2997ef451c34e036";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "69381881ef09b41d9bbbe523504a346d301f1547";
+      rev = "af2480ba1b147a6a54c0c21e2997ef451c34e036";
       fetchSubmodules = false;
-      sha256 = "sha256-dbf++KFfCQ4m+HoWk6UGTBS1ajyiCGMhNM5O0D3YuTQ=";
+      sha256 = "sha256-3KfuCHGFFcEzgprvJzJiyot8HqYWHvDhIu4Qo6Tu6Ys=";
     };
-    date = "2024-06-02";
+    date = "2024-06-04";
+  };
+  zinc-custom = {
+    pname = "zinc-custom";
+    version = "7a472dba446ceebaedafb534a96f3d582546a922";
+    src = fetchFromGitHub {
+      owner = "zinc97neo";
+      repo = "nixos-customizations";
+      rev = "7a472dba446ceebaedafb534a96f3d582546a922";
+      fetchSubmodules = false;
+      sha256 = "sha256-9QES5vOpB24RjkzZ846VZcBp3tA59SQ6Rig166kIHCs=";
+    };
+    date = "2024-06-09";
   };
 }

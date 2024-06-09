@@ -1,18 +1,11 @@
 { pkgs, ... }:
 {
-  home.file.".config/alacritty/theme" = {
-    source = ../themes/alacritty;
-    recursive = true;
-  };
   programs.alacritty = {
     enable = true;
     settings = {
       shell.program = "${pkgs.zsh}/bin/zsh";
       env.TERM = "xterm-256color";
       terminal.osc52 = "CopyPaste";
-      import = [
-        "~/.config/alacritty/theme/catppuccin-macchiato.toml"
-      ];
       font = {
         size = 14.0;
         normal.family = "Maple Mono SC NF";

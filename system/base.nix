@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   environment = {
     variables.EDITOR = "hx";
@@ -13,6 +13,8 @@
       gnutar
       gzip
       nvfetcher
+      fontforge
+      psftools
     ];
   };
   time.timeZone = "Asia/Shanghai";
@@ -32,8 +34,9 @@
   system = {
     autoUpgrade = {
       enable = true;
-      channel = "https://nixos.org/channels/nixos-unstable";
+      channel = "https://nixos.org/channels/nixos-24.05";
     };
-    stateVersion = "24.11";
+    stateVersion = "24.05";
   };
+  catppuccin = config.machine.catppuccin;
 }

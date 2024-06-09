@@ -18,7 +18,6 @@
         shell = "${pkgs.zsh}/bin/zsh";
         disable_ligatures = "never";
       };
-      theme = "Catppuccin-Macchiato";
       extraConfig = ''
         font_features MapleMonoSCNF-Regular +cv01 +cv02 +cv03 +cv04 +ss01 +ss02 +ss03 +ss04 +ss05
         font_features MapleMonoSCNF-Bold +cv01 +cv02 +cv03 +cv04 +ss01 +ss02 +ss03 +ss04 +ss05

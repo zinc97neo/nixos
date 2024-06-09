@@ -8,9 +8,9 @@ nixpkgs.lib.nixosSystem {
   specialArgs = { inherit inputs; };
   modules = [
     ../system/desktop.nix
-    inputs.grub2-theme.nixosModules.default
     ../machines/desktop
     inputs.home-manager.nixosModules.home-manager
+    inputs.catppuccin.nixosModules.catppuccin
     inputs.nix-ld.nixosModules.nix-ld
     ({ config, ... }: {
       programs.nix-ld.dev.enable = true;
@@ -21,7 +21,9 @@ nixpkgs.lib.nixosSystem {
         sharedModules = [
           (../. + "/machines/${config.machine.userName}.nix")
         ];
-        users.root = ../home/users/root.nix;
+        users.root = {
+          imports = [ ../home/users/root.nix ] ++ [ inputs.catppuccin.homeManagerModules.catppuccin ];
+        };
         users.${config.machine.userName} = {
           imports = [
             ../home/users/desktop.nix
@@ -29,6 +31,7 @@ nixpkgs.lib.nixosSystem {
             inputs.ags.homeManagerModules.default
             inputs.anyrun.homeManagerModules.default
             inputs.niri.homeModules.niri
+            inputs.catppuccin.homeManagerModules.catppuccin
           ];
         };
       };

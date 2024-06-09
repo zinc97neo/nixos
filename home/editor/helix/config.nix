@@ -1,5 +1,4 @@
 {
-  theme = "custom_dark";
   editor = {
     line-number = "relative";
     bufferline = "multiple";

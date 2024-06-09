@@ -17,5 +17,11 @@
     recursive = true;
   };
 
-
+  i18n = {
+    inputMethod = {
+      fcitx5 = {
+        catppuccin.enable = false;
+      };
+    };
+  };
 }

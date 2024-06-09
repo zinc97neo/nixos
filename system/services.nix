@@ -29,7 +29,7 @@ in
     greetd =
       let
         session = {
-          command = "niri";
+          command = "niri > /dev/null 2>&1";
           user = user;
         };
       in

@@ -1,15 +1,10 @@
-{ pkgs, ... }: {
+{ ... }: {
   imports = [
     ./dev.nix
     ./shell
     ./ssh
     ./terminal
     ./fastfetch
-  ];
-  home.packages = with pkgs; [
-    # Interactively filter its input using fuzzy searching, not limit to filenames.
-    fzf
-    just
   ];
   programs = {
     # A modern replacement for ‘ls’
@@ -26,35 +21,11 @@
       enable = true;
       config = {
         pager = "less -FR";
-        theme = "catppuccin-mocha";
-      };
-      themes = {
-        # https://github.com/catppuccin/bat
-        catppuccin-mocha = {
-          src = ./themes/bat;
-          file = "Macchiato.tmTheme";
-        };
       };
     };
     # A command-line fuzzy finder
     fzf = {
       enable = true;
-      # https://github.com/catppuccin/fzf
-      # catppuccin-mocha
-      colors = {
-        "bg+" = "#363a4f";
-        "bg" = "#24273a";
-        "spinner" = "#f4dbd6";
-        "hl" = "#ed8796";
-        "fg" = "#cad3f5";
-        "header" = "#ed8796";
-        "info" = "#c6a0f6";
-        "pointer" = "#f4dbd6";
-        "marker" = "#f4dbd6";
-        "fg+" = "#cad3f5";
-        "prompt" = "#c6a0f6";
-        "hl+" = "#ed8796";
-      };
     };
     # zoxide is a smarter cd command, inspired by z and autojump.
     # It remembers which directories you use most frequently,
@@ -82,8 +53,6 @@
     btop = {
       enable = true;
       settings = {
-        color_theme = "dracula";
-        theme_background = false;
         update_ms = 500;
       };
     };

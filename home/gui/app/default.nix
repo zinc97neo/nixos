@@ -14,11 +14,6 @@
     imv = {
       enable = true;
       settings = {
-        options = {
-          background = "24273a";
-          overlay_text_color = "cad3f5";
-          overlay_background_color = "181926";
-        };
         aliases = {
           q = "close";
         };
@@ -30,13 +25,11 @@
       let
         zincvim =
           inputs.zincvim.packages."${pkgs.system}".default;
-        # content = builtins.replaceStrings "zincvim" "${zincvim}/bin/zincvim" (builtins.readFile ./neovide.toml);
-        content = builtins.readFile ./neovide.toml;
-        last-contet =
-          builtins.replaceStrings [ "zincvim" ] [ "${zincvim}/bin/zincvim" ] content;
+        contet =
+          builtins.replaceStrings [ "zincvim" ] [ "${zincvim}/bin/zincvim" ] (builtins.readFile ./neovide.toml);
       in
       {
-        text = last-contet;
+        text = contet;
       };
   };
 }

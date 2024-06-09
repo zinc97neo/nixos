@@ -1,6 +1,4 @@
-{ lib
-, ...
-}:
+{ lib, ... }:
 with lib;
 {
   options.machine = {
@@ -27,6 +25,17 @@ with lib;
     };
     wallpaper = mkOption {
       type = types.path;
+    };
+    catppuccin = {
+      enable = mkOption {
+        type = types.bool;
+      };
+      accent = mkOption {
+        type = types.str;
+      };
+      flavor = mkOption {
+        type = types.str;
+      };
     };
   };
 }

@@ -17,3 +17,7 @@ fetch.github = "lotem/librime-proto"
 [rime-ice]
 src.git = "https://github.com/iDvel/rime-ice"
 fetch.github = "iDvel/rime-ice"
+
+[zinc-custom]
+src.git = "https://github.com/zinc97neo/nixos-customizations.git"
+fetch.github = "zinc97neo/nixos-customizations"

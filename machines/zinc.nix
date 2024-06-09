@@ -12,5 +12,10 @@
     browser = "firefox";
     shell = pkgs.bash;
     wallpaper = ../wallpaper/catppuccin16x10-2k.png;
+    catppuccin = {
+      enable = true;
+      accent = "lavender";
+      flavor = "macchiato";
+    };
   };
 }
