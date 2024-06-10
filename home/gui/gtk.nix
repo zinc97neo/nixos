@@ -35,7 +35,6 @@
       package = config.gtk.theme.package;
     };
   };
-
   home.sessionVariables = {
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     CALIBRE_USE_DARK_PALETTE = "1";

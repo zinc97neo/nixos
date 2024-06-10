@@ -101,7 +101,7 @@
     },
     "zinc-custom": {
         "cargoLocks": null,
-        "date": "2024-06-09",
+        "date": "2024-06-10",
         "extract": null,
         "name": "zinc-custom",
         "passthru": null,
@@ -113,10 +113,10 @@
             "name": null,
             "owner": "zinc97neo",
             "repo": "nixos-customizations",
-            "rev": "7a472dba446ceebaedafb534a96f3d582546a922",
-            "sha256": "sha256-9QES5vOpB24RjkzZ846VZcBp3tA59SQ6Rig166kIHCs=",
+            "rev": "d8596d94169fa3f04b93034a3769fe95f14e4e07",
+            "sha256": "sha256-zFB+5tmOIjEXJiVjdtUWktC6rww0hDD5xc1JNpxwWXI=",
             "type": "github"
         },
-        "version": "7a472dba446ceebaedafb534a96f3d582546a922"
+        "version": "d8596d94169fa3f04b93034a3769fe95f14e4e07"
     }
 }

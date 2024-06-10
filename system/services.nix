@@ -1,7 +1,4 @@
-{ pkgs, config, ... }:
-let
-  user = "${config.machine.userName}";
-in
+{ pkgs, ... }:
 {
   # Remove sound.enable or turn it off if you had it set previously, it seems to cause conflicts with pipewire
   sound.enable = false;
@@ -19,28 +16,10 @@ in
       jack.enable = true;
       wireplumber.enable = true;
     };
-    xserver = {
-      enable = false;
-      videoDrivers = [ "amdgpu" ];
-    };
+
     v2raya.enable = true;
     upower.enable = true;
     power-profiles-daemon.enable = true;
-    greetd =
-      let
-        session = {
-          command = "niri > /dev/null 2>&1";
-          user = user;
-        };
-      in
-      {
-        enable = true;
-        settings = {
-          terminal.vt = 1;
-          default_session = session;
-          initial_session = session;
-        };
-      };
     keyd = {
       enable = true;
       keyboards = {

@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   imports = [
     ./base.nix
@@ -17,6 +17,29 @@
   programs = {
     dconf.enable = true;
     light.enable = true;
+  };
+  environment.systemPackages = with pkgs; [ zinc-custom ];
+  services = {
+    xserver = {
+      enable = false;
+      videoDrivers = [ "amdgpu" ];
+    };
+    displayManager = {
+      enable = true;
+      sessionPackages = [ pkgs.niri-unstable ];
+      defaultSession = "niri";
+      sddm = {
+        enable = true;
+        catppuccin.enable = false;
+        wayland.enable = true;
+        settings = {
+          Autologin = {
+            User = config.machine.userName;
+          };
+        };
+        theme = "${config.machine.catppuccin.flavor}";
+      };
+    };
   };
   location.provider = "geoclue2";
   xdg.portal = {
