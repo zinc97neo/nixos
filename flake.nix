@@ -13,11 +13,6 @@
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     niri.url = "github:sodiboo/niri-flake";
     ags.url = "github:Aylur/ags";
-    anyrun.url = "github:Kirottu/anyrun";
-    anyrun-plugins = {
-      url = "github:wuliuqii/anyrun-plugins";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     zincvim = {
       url = "github:zinc97neo/zincvim";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -13,8 +13,6 @@
       gnutar
       gzip
       nvfetcher
-      fontforge
-      psftools
     ];
   };
   time.timeZone = "Asia/Shanghai";

@@ -4,6 +4,7 @@
     pavucontrol
     blueberry
     neovide
+    freerdp3
   ];
   programs = {
     mpv = {

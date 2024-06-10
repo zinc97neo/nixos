@@ -1,8 +1,10 @@
 { pkgs, ... }:
 {
-  virtualisation.docker = {
-    enable = true;
-    storageDriver = "btrfs";
+  virtualisation = {
+    docker = {
+      enable = true;
+      storageDriver = "btrfs";
+    };
   };
   security = {
     sudo.wheelNeedsPassword = false;
