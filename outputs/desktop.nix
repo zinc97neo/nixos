@@ -29,7 +29,6 @@ nixpkgs.lib.nixosSystem {
             ../home/users/desktop.nix
           ] ++ [
             inputs.ags.homeManagerModules.default
-            inputs.anyrun.homeManagerModules.default
             inputs.niri.homeModules.niri
             inputs.catppuccin.homeManagerModules.catppuccin
           ];
