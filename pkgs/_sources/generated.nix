@@ -51,26 +51,26 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "af2480ba1b147a6a54c0c21e2997ef451c34e036";
+    version = "0b59306d619a29cd345e3277aa5cd0b0d5653eda";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "af2480ba1b147a6a54c0c21e2997ef451c34e036";
+      rev = "0b59306d619a29cd345e3277aa5cd0b0d5653eda";
       fetchSubmodules = false;
-      sha256 = "sha256-3KfuCHGFFcEzgprvJzJiyot8HqYWHvDhIu4Qo6Tu6Ys=";
+      sha256 = "sha256-dElBA0baKaMN04sSXvMgfey+I60Zq4b+i+KoYzpxZMQ=";
     };
-    date = "2024-06-04";
+    date = "2024-06-10";
   };
   zinc-custom = {
     pname = "zinc-custom";
-    version = "d8596d94169fa3f04b93034a3769fe95f14e4e07";
+    version = "57522fafa28decfd66c41856dd99ab9b782a15d9";
     src = fetchFromGitHub {
       owner = "zinc97neo";
       repo = "nixos-customizations";
-      rev = "d8596d94169fa3f04b93034a3769fe95f14e4e07";
+      rev = "57522fafa28decfd66c41856dd99ab9b782a15d9";
       fetchSubmodules = false;
-      sha256 = "sha256-zFB+5tmOIjEXJiVjdtUWktC6rww0hDD5xc1JNpxwWXI=";
+      sha256 = "sha256-dLEuJRxvfN6tX3EoZK7OCaAXXT4TuNeGX4A/q5V1h9k=";
     };
-    date = "2024-06-10";
+    date = "2024-06-11";
   };
 }

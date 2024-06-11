@@ -81,7 +81,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2024-06-04",
+        "date": "2024-06-10",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -93,15 +93,15 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "af2480ba1b147a6a54c0c21e2997ef451c34e036",
-            "sha256": "sha256-3KfuCHGFFcEzgprvJzJiyot8HqYWHvDhIu4Qo6Tu6Ys=",
+            "rev": "0b59306d619a29cd345e3277aa5cd0b0d5653eda",
+            "sha256": "sha256-dElBA0baKaMN04sSXvMgfey+I60Zq4b+i+KoYzpxZMQ=",
             "type": "github"
         },
-        "version": "af2480ba1b147a6a54c0c21e2997ef451c34e036"
+        "version": "0b59306d619a29cd345e3277aa5cd0b0d5653eda"
     },
     "zinc-custom": {
         "cargoLocks": null,
-        "date": "2024-06-10",
+        "date": "2024-06-11",
         "extract": null,
         "name": "zinc-custom",
         "passthru": null,
@@ -113,10 +113,10 @@
             "name": null,
             "owner": "zinc97neo",
             "repo": "nixos-customizations",
-            "rev": "d8596d94169fa3f04b93034a3769fe95f14e4e07",
-            "sha256": "sha256-zFB+5tmOIjEXJiVjdtUWktC6rww0hDD5xc1JNpxwWXI=",
+            "rev": "57522fafa28decfd66c41856dd99ab9b782a15d9",
+            "sha256": "sha256-dLEuJRxvfN6tX3EoZK7OCaAXXT4TuNeGX4A/q5V1h9k=",
             "type": "github"
         },
-        "version": "d8596d94169fa3f04b93034a3769fe95f14e4e07"
+        "version": "57522fafa28decfd66c41856dd99ab9b782a15d9"
     }
 }

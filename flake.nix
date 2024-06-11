@@ -12,6 +12,11 @@
     };
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     niri.url = "github:sodiboo/niri-flake";
+    hyprland = {
+      url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    hyprscroller.url = "github:dawsers/hyprscroller";
     ags.url = "github:Aylur/ags";
     zincvim = {
       url = "github:zinc97neo/zincvim";

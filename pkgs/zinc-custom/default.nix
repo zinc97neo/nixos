@@ -23,8 +23,10 @@ stdenvNoCC.mkDerivation {
     runHook preInstall
     mkdir -p $out/
     mkdir -p $out/share/sddm/themes/
+    mkdir -p $out/share/icons
     cp -r $src/grub $out/
     cp -r $src/sddm/* $out/share/sddm/themes/
+    cp -r $src/cursors/* $out/share/icons
     runHook postInstall
   '';
 

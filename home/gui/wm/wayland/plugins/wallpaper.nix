@@ -9,7 +9,7 @@ in
       default = {
         mode = "stretch";
       };
-      eDP-1 = {
+      any = {
         path = "${wallpaper}";
       };
     };
