@@ -12,17 +12,12 @@
     };
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     niri.url = "github:sodiboo/niri-flake";
-    hyprland = {
-      url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    hyprscroller.url = "github:dawsers/hyprscroller";
     ags.url = "github:Aylur/ags";
     zincvim = {
       url = "github:zinc97neo/zincvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    catppuccin.url = "github:catppuccin/nix";
+    catppuccin.url = "github:catppuccin/nix?rev=96681f62faa285ad0c8dce2cdae6b0a1d0a8f094";
   };
   outputs = inputs @ { self, nixpkgs, ... }: import ./outputs {
     inherit inputs self nixpkgs;
