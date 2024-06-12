@@ -17,5 +17,9 @@
       accent = "lavender";
       flavor = "macchiato";
     };
+    Catppuccin = {
+      Accent = "Lavender";
+      Flavor = "Macchiato";
+    };
   };
 }

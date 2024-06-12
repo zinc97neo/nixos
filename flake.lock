@@ -693,6 +693,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-unstable": {
+      "locked": {
+        "lastModified": 1717974879,
+        "narHash": "sha256-GTO3C88+5DX171F/gVS3Qga/hOs/eRMxPFpiHq2t+D8=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "c7b821ba2e1e635ba5a76d299af62821cbcb09f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1716542732,
@@ -855,6 +871,7 @@
         "nix-ld": "nix-ld",
         "nixos-wsl": "nixos-wsl",
         "nixpkgs": "nixpkgs_6",
+        "nixpkgs-unstable": "nixpkgs-unstable",
         "zincvim": "zincvim"
       }
     },
@@ -959,16 +976,16 @@
       "inputs": {
         "flake-parts": "flake-parts_3",
         "nixpkgs": [
-          "nixpkgs"
+          "nixpkgs-unstable"
         ],
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1717856919,
-        "narHash": "sha256-t0B5sRo/FAqoC4jLZnL5B+yasGdpypQWi/vw7oRDLkY=",
+        "lastModified": 1718100094,
+        "narHash": "sha256-FE54UmYfYiBkqfEi6xLC5hhuKBDcVCK7/v8siGcAhWE=",
         "owner": "zinc97neo",
         "repo": "zincvim",
-        "rev": "d63ae179314b9844735c0cddbec8d666fd0fa0b4",
+        "rev": "e788246d338c670c492ebc973c2fbe278dcde08a",
         "type": "github"
       },
       "original": {

@@ -113,10 +113,10 @@
             "name": null,
             "owner": "zinc97neo",
             "repo": "nixos-customizations",
-            "rev": "57522fafa28decfd66c41856dd99ab9b782a15d9",
-            "sha256": "sha256-dLEuJRxvfN6tX3EoZK7OCaAXXT4TuNeGX4A/q5V1h9k=",
+            "rev": "d257d3f62acb3ce72ed54761ee4ab88ce766e256",
+            "sha256": "sha256-oWVFkZyTJBbwI5j8g5QZDgSuXtSAUMjZJSK73xoXHbw=",
             "type": "github"
         },
-        "version": "57522fafa28decfd66c41856dd99ab9b782a15d9"
+        "version": "d257d3f62acb3ce72ed54761ee4ab88ce766e256"
     }
 }

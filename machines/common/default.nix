@@ -37,5 +37,13 @@ with lib;
         type = types.str;
       };
     };
+    Catppuccin = {
+      Accent = mkOption {
+        type = types.str;
+      };
+      Flavor = mkOption {
+        type = types.str;
+      };
+    };
   };
 }

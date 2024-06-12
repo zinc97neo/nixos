@@ -1,4 +1,8 @@
 { pkgs, config, ... }:
+let
+  Catppuccin = config.machine.Catppuccin;
+  CursorTheme = "Catppuccin-${Catppuccin.Flavor}-${Catppuccin.Accent}-Cursors";
+in
 {
   imports = [
     ./base.nix
@@ -33,8 +37,9 @@
         catppuccin.enable = false;
         wayland.enable = true;
         settings = {
-          Autologin = {
-            User = config.machine.userName;
+          Theme = {
+            CursorTheme = CursorTheme;
+            CursorSize = 96;
           };
         };
         theme = "${config.machine.catppuccin.flavor}";

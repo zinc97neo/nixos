@@ -63,13 +63,13 @@
   };
   zinc-custom = {
     pname = "zinc-custom";
-    version = "57522fafa28decfd66c41856dd99ab9b782a15d9";
+    version = "d257d3f62acb3ce72ed54761ee4ab88ce766e256";
     src = fetchFromGitHub {
       owner = "zinc97neo";
       repo = "nixos-customizations";
-      rev = "57522fafa28decfd66c41856dd99ab9b782a15d9";
+      rev = "d257d3f62acb3ce72ed54761ee4ab88ce766e256";
       fetchSubmodules = false;
-      sha256 = "sha256-dLEuJRxvfN6tX3EoZK7OCaAXXT4TuNeGX4A/q5V1h9k=";
+      sha256 = "sha256-oWVFkZyTJBbwI5j8g5QZDgSuXtSAUMjZJSK73xoXHbw=";
     };
     date = "2024-06-11";
   };

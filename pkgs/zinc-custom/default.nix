@@ -21,11 +21,11 @@ stdenvNoCC.mkDerivation {
 
   installPhase = ''
     runHook preInstall
-    mkdir -p $out/
-    mkdir -p $out/share/sddm/themes/
-    mkdir -p $out/share/icons
+    mkdir -p "$out/"{,share/sddm/{themes,icons,faces},share/icons}
     cp -r $src/grub $out/
-    cp -r $src/sddm/* $out/share/sddm/themes/
+    cp -r $src/sddm/themes/* $out/share/sddm/themes/
+    cp -r $src/sddm/icons/* $out/share/sddm/icons/
+    cp -r $src/sddm/icons/* $out/share/sddm/faces/
     cp -r $src/cursors/* $out/share/icons
     runHook postInstall
   '';
