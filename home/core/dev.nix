@@ -19,6 +19,10 @@
     # nodejs
     nodejs_22
     corepack_22
+
+    # other
+    lazygit
+    ripgrep
   ];
 
   home.file = {
