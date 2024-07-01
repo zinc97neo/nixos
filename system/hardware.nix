@@ -5,6 +5,6 @@
       enable = true;
       package = pkgs.bluez5-experimental;
     };
-    opengl.enable = true;
+    graphics.enable = true;
   };
 }

@@ -2,7 +2,7 @@ neovim-bin = "zincvim"
 
 [font]
 normal = ["Maple Mono SC NF"]
-size = 20
+size = 14
 
 [font.features]
 "Maple Mono SC NF" = [

@@ -11,8 +11,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager.url = "github:nix-community/home-manager";
-    niri.url = "github:sodiboo/niri-flake";
-    ags.url = "github:Aylur/ags";
     zincvim.url = "github:zinc97neo/zincvim";
     catppuccin.url = "github:catppuccin/nix?rev=96681f62faa285ad0c8dce2cdae6b0a1d0a8f094";
   };

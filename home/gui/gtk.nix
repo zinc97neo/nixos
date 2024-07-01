@@ -26,24 +26,18 @@
     gtk3.extraConfig.gtk-application-prefer-dark-theme = true;
     gtk4.extraConfig.gtk-application-prefer-dark-theme = true;
   };
-
   qt = {
     enable = true;
-    platformTheme.name = "gtk";
-    style = {
-      name = "gtk4";
-      package = config.gtk.theme.package;
-    };
+    platformTheme.name = "kvantum";
+    style.name = "kvantum";
   };
   home.sessionVariables = {
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     CALIBRE_USE_DARK_PALETTE = "1";
   };
-
   xdg.configFile = {
     "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
     "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
     "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
   };
-
 }

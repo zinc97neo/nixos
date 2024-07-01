@@ -28,8 +28,6 @@ nixpkgs.lib.nixosSystem {
           imports = [
             ../home/users/desktop.nix
           ] ++ [
-            inputs.ags.homeManagerModules.default
-            inputs.niri.homeModules.niri
             inputs.catppuccin.homeManagerModules.catppuccin
           ];
         };
@@ -37,7 +35,6 @@ nixpkgs.lib.nixosSystem {
     })
     {
       nixpkgs.overlays = [
-        inputs.niri.overlays.niri
         selfPkgs.overlay
       ];
     }

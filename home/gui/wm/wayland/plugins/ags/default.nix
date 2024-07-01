@@ -1,8 +1,6 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    ags
   ];
-  programs.ags = {
-    enable = true;
-  };
 }

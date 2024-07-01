@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, inputs, config, ... }:
 let
   Catppuccin = config.machine.Catppuccin;
   CursorTheme = "Catppuccin-${Catppuccin.Flavor}-${Catppuccin.Accent}-Cursors";
@@ -30,7 +30,9 @@ in
     };
     displayManager = {
       enable = true;
-      sessionPackages = [ pkgs.niri-unstable ];
+      sessionPackages = [
+        pkgs.niri
+      ];
       defaultSession = "niri";
       sddm = {
         enable = true;
